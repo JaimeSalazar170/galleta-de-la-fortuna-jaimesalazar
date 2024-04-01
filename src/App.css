@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Belgrano&family=Kaisei+Opti&family=Lilita+One&family=Madimi+One&family=Marko+One&family=Molle&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Stoke:wght@300;400&display=swap');
+
+/* -----Reset----*/
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: black;
+    color: white;
+}
+
+button{
+    cursor: pointer;
+    border: none;
+    display: inline-block;
+    font-family: inherit;
+}
+
+/* -----App----*/
+
+.app{
+    background-image: url(../public/fortuna-2/fondo1.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    min-height: 100vh;
+}
+
+.app__title{
+    color: black;
+    font-family: "Marko One";
+    text-align: center;
+    margin: 10px;
+    text-decoration-line: underline black;
+    text-shadow: 0 0 25px rgb(255, 0, 51);
+}
+
+.text {
+    font-family: "Belgrano";
+    height: 300px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 7px;
+    text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.308);
+}
+
+.text p{
+    text-align: center;
+    background-color: rgba(220, 20, 60, 0.623);
+    padding: 7px 14px;
+    border-radius: 7px;
+    border-style: solid;
+    border-color: crimson;
+    transition: transform .5s;
+}
+
+.text p:hover{
+    color: crimson;
+    background-color: white;
+    box-shadow: 0 0 20px;
+    border-color: crimson;
+    transform: scale(1.05);
+    transition: transform .5s;
+}
+
+.btn{
+    font-family: "Lilita One";
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    letter-spacing: 0,5px;
+    background-color: crimson;
+    box-shadow: 4px 4px 2px rgba(0, 0, 0, 0.377);
+    padding: 7px 14px;
+    border-radius: 7px;
+    border-style:solid;
+    border-color: rgba(0, 0, 0, 0.521);
+    margin: 10px;
+    transition: transform .5s;
+}
+
+.btn:hover {
+    color: crimson;
+    background-color: white;
+    box-shadow: 0 0 20px;
+    border-color: crimson;
+    transform: scale(1.1);
+    transition: transform .5s;
+}
+
